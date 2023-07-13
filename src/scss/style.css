@@ -6,19 +6,6 @@
 *   Published Date: July 2023
 *   LICENSE: MIT License
 */
-:root {
-  --bg-color: #fff;
-  --fnt-color: #000;
-  --primary-color: #fe4879;
-  --secondary-color: #fee3ea;
-  --small-color: grey;
-  --d-bg-color: var(--fnt-color);
-  --d-fnt-color: var(--bg-color);
-  --d-primary-color: #fe4879;
-  --d-secondary-color: #fee3ea;
-  --d-small-color: grey;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -45,7 +32,7 @@ body {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   header {
     padding: 1em;
   }
@@ -181,16 +168,12 @@ body {
   }
   .recom-container {
     display: flex;
-    gap: 1em;
-    padding-left: 1.5em;
-    margin-bottom: 2.5em;
-  }
-  .recom-container {
-    display: flex;
     padding: 0.5em 2em;
     gap: 0.8em;
     width: 100vw;
+    gap: 1em;
     overflow-x: auto;
+    margin-bottom: 2.5em;
     scroll-snap-type: x mandatory;
   }
   .recom-container .recom {
@@ -252,15 +235,34 @@ body {
     transform: translateY(0);
   }
 }
-@media (max-width: 500px) and (prefers-color-scheme: dark) {
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
   :root {
-    --bg-color: var(--d-fnt-color);
-    --fnt-color: var(--d-bg-color);
+    --bg-color: #fff;
+    --fnt-color: #111;
     --primary-color: #fe4879;
     --secondary-color: #fee3ea;
     --small-color: grey;
+    --shadow: -5px 5px 0.5rem #825d68;
+    --d-bg-color: var(--fnt-color);
+    --d-fnt-color: var(--bg-color);
+    --d-primary-color: #fe4879;
+    --d-secondary-color: #fee3ea;
+    --d-small-color: grey;
   }
   body {
-    background-color: var(--d-bg-color);
+    background-color: #5B3026;
+    color: var(--d-fnt-color);
+  }
+  h4 {
+    color: #fee3ea !important;
+  }
+  .card {
+    box-shadow: var(--shadow) !important;
+  }
+  .card p {
+    color: #5B3026 !important;
+  }
+  .recom-container p {
+    color: #5B3026 !important;
   }
 }/*# sourceMappingURL=style.css.map */
