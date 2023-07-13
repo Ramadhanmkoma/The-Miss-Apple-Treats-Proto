@@ -242,7 +242,7 @@ body {
     --primary-color: #fe4879;
     --secondary-color: #fee3ea;
     --small-color: grey;
-    --shadow: -5px 5px 0.5rem #825d68;
+    --shadow: -5px 5px 0.5rem #333;
     --d-bg-color: var(--fnt-color);
     --d-fnt-color: var(--bg-color);
     --d-primary-color: #fe4879;
@@ -261,6 +261,9 @@ body {
   }
   .card p {
     color: #5B3026 !important;
+  }
+  .recom-container .recom {
+    box-shadow: var(--shadow);
   }
   .recom-container p {
     color: #5B3026 !important;

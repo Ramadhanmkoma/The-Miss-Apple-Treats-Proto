@@ -262,7 +262,7 @@ body {
       --primary-color: #fe4879;
       --secondary-color: #fee3ea;
       --small-color: grey;
-      --shadow: -5px 5px 0.5rem #825d68;
+      --shadow: -5px 5px 0.5rem #333;
 
       // darkkMode Colors
       --d-bg-color: var(--fnt-color);
@@ -287,6 +287,9 @@ body {
     }
 
     .recom-container {
+      .recom {
+        box-shadow: var(--shadow);
+      }
       p { color: #5B3026 !important; }
     }
   }
