@@ -1,0 +1,11 @@
+{
+  "name": "cake-design",
+  "version": "1.0.0",
+  "description": "Cakes Promotion",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts"
+  },
+  "author": "Ramadhanmkoma.me",
+  "license": "ISC"
+}

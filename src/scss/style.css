@@ -1,0 +1,266 @@
+@import "../assets/vendor/bootstrap-icons/bootstrap-icons.css";
+/**
+*   Author: Ramadhan Mohammed Mkoma
+*   Website: Ramadhanmkoma.me
+*   Email: Ramadhanmkoma9@gmail.com
+*   Published Date: July 2023
+*   LICENSE: MIT License
+*/
+:root {
+  --bg-color: #fff;
+  --fnt-color: #000;
+  --primary-color: #fe4879;
+  --secondary-color: #fee3ea;
+  --small-color: grey;
+  --d-bg-color: var(--fnt-color);
+  --d-fnt-color: var(--bg-color);
+  --d-primary-color: #fe4879;
+  --d-secondary-color: #fee3ea;
+  --d-small-color: grey;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", Roboto, system-ui, -apple-system, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar {
+  /* width: 0.5rem; */
+  /* scrollbar-color: var(--color-primary) var(--color-background); */
+  scrollbar-width: thin;
+  scroll-snap-type: none;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 1em;
+  }
+  h1.cakes-heading {
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 600;
+  }
+  h4.slogan {
+    font-weight: 400;
+    color: grey;
+    font-size: 24px;
+  }
+  .list-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    overflow-x: auto;
+    width: 100vw;
+    padding: 0.5em 0 0 2em;
+    scroll-snap-type: x mandatory;
+  }
+  .list-container .cake-item:nth-child(1) {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    width: 150px;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    color: #fff;
+    border-radius: 36px;
+  }
+  .list-container .cake-item:nth-child(1) span.bi {
+    background-color: var(--bg-color);
+    color: black;
+  }
+  .list-container .cake-item {
+    scroll-snap-align: center;
+    padding: 0.39em;
+  }
+  .list-container .cake-item span.bi {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #fee3ea;
+    width: 40px !important;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .cards-container {
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    padding: 2em;
+    width: 100vw;
+    scroll-snap-type: x mandatory;
+  }
+  .cards-container .card {
+    background-color: #fee3ea;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 1.4rem;
+    min-width: 250px;
+    height: 350px;
+    overflow: hidden;
+    padding: 1em 0 1em 1.5em;
+    box-shadow: -5px 5px 0.5rem #bbb;
+    scroll-snap-align: center;
+  }
+  .cards-container .card div.cake-img {
+    flex: 1;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 0.5em;
+    border-radius: 1.4rem 1.4rem 0;
+  }
+  .cards-container .card div.cake-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 1.4rem 1.4rem 0;
+  }
+  .cards-container .card p {
+    font-weight: 600;
+  }
+  .cards-container .card small {
+    color: grey;
+  }
+  .cards-container .card span {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  .cards-container .card span sub {
+    font-weight: 400;
+    color: var(--primary-color);
+  }
+  .to-top {
+    position: fixed;
+    inset: auto 2em 1.5em auto;
+  }
+  .to-top span {
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0.5rem #aaa;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+  }
+  .to-left {
+    position: fixed;
+    inset: auto auto 1.5em 2em;
+  }
+  .to-left span {
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0.5rem #aaa;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+  }
+  .recom-container {
+    display: flex;
+    gap: 1em;
+    padding-left: 1.5em;
+    margin-bottom: 2.5em;
+  }
+  .recom-container {
+    display: flex;
+    padding: 0.5em 2em;
+    gap: 0.8em;
+    width: 100vw;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .recom-container .recom {
+    display: flex;
+    scroll-snap-align: center;
+    gap: 0.5em;
+    background-color: #fee3ea;
+    flex: 1;
+    border-radius: 1rem;
+    min-width: 280px;
+    box-shadow: 0 3px 0.5rem #aaa;
+  }
+  .recom-container .recom .recon-img-con {
+    border-radius: 0.7rem 0.7rem 0.7rem 0;
+  }
+  .recom-container .recom .recon-img-con img {
+    width: 80px;
+    height: 80px;
+    border-radius: 0.7rem 0.7rem 0.7rem 0;
+  }
+  .recom-container .recom .recom-info {
+    padding: 0.5em;
+  }
+  .recom-container .recom .recom-info p {
+    font-weight: 600;
+  }
+  .recom-container .recom .recom-info small {
+    color: grey;
+  }
+  .recom-container .recom .recom-info span {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .recom-container .recom .recom-info span sub {
+    font-weight: 400;
+  }
+  .recom-container .recom .recom-info div.order {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+  }
+  .recom-container .recom .recom-info div.order a {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 0.1em 0.5em;
+    border-radius: 24px;
+  }
+  .hdn {
+    filter: blur(5px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transform: translateY(-100%);
+  }
+  .show {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 500px) and (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: var(--d-fnt-color);
+    --fnt-color: var(--d-bg-color);
+    --primary-color: #fe4879;
+    --secondary-color: #fee3ea;
+    --small-color: grey;
+  }
+  body {
+    background-color: var(--d-bg-color);
+  }
+}/*# sourceMappingURL=style.css.map */

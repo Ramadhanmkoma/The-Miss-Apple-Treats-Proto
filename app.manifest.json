@@ -1,0 +1,62 @@
+{
+    "name": "The Miss Apple Treats",
+    "short_name": "Apple Treats",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#363949",
+    "theme_color": "#363949",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/assets/img/logo.png",
+        "type": "image/png",
+        "sizes": "64x64"
+      },
+      {
+        "src": "/assets/img/logo.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "/assets/img/logo.png",
+        "type": "image/png",
+        "sizes": "150x120"
+      },
+      {
+        "src": "/assets/img/logo.png",
+        "type": "image/png",
+        "sizes": "500x500"
+      },
+      {
+        "src": "/assets/img/logo.png",
+        "type": "image/png",
+        "sizes": "1280x1280"
+      }
+    ],
+    "description": "This is my official web application, that contains my background information, CV and the services that I provide. Users can easily contact direct with me through WhatsApp, twitter and LinkedIn using this application. Hope you'll be comfortable with the app.",
+    "dir": "auto",
+    "lang": "en",
+    "display_override": [
+      "standalone"
+    ],
+    "categories": [
+      "education",
+      "personalization",
+      "productivity",
+      "social"
+    ],
+    "shortcuts": [
+      {
+        "name": "",
+        "url": "/",
+        "description": ""
+      }
+    ],
+    "related_applications": [
+      {
+        "platform": "webapp",
+        "url": "https://blue-emarket.netlify.app",
+        "id": ""
+      }
+    ]
+  }
