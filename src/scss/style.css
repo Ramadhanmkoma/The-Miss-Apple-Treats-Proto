@@ -209,7 +209,7 @@ body {
   .recom-container .recom .recon-img-con img {
     width: 80px;
     height: 80px;
-    border-radius: 0.7rem 0.7rem 0.7rem 0;
+    border-radius: 0.7rem;
   }
   .recom-container .recom .recom-info {
     padding: 0.5em;
