@@ -261,6 +261,18 @@ body {
     border-radius: 24px;
   }
 
+  @media(prefers-color-scheme: light) {
+    :root {
+      // lightMode Colors
+      --bg-color: #fff;
+      --fnt-color: #111;
+      --primary-color: #fe4879;
+      --secondary-color: #fee3ea;
+      --small-color: grey;
+      --shadow: -5px 5px 0.5rem #333;
+    }
+  }
+
   @media (prefers-color-scheme: dark) {
     // FIXME: Theming problem
     :root {
@@ -282,7 +294,6 @@ body {
 
     body {
       background-color: #5b3026;
-      color: var(--d-fnt-color);
     }
 
     h4 {
