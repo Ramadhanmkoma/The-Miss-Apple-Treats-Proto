@@ -253,6 +253,14 @@ body {
     transform: translateY(0);
   }
 
+  a.ord {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 0.1em 0.5em;
+    border-radius: 24px;
+  }
+
   @media (prefers-color-scheme: dark) {
     // FIXME: Theming problem
     :root {
@@ -273,16 +281,18 @@ body {
     }
 
     body {
-      background-color: #5B3026;
+      background-color: #5b3026;
       color: var(--d-fnt-color);
     }
 
-    h4 { color: #fee3ea !important;}
-    
+    h4 {
+      color: #fee3ea !important;
+    }
+
     .card {
       box-shadow: var(--shadow) !important;
       p {
-        color: #5B3026 !important;
+        color: #5b3026 !important;
       }
     }
 
@@ -290,7 +300,9 @@ body {
       .recom {
         box-shadow: var(--shadow);
       }
-      p { color: #5B3026 !important; }
+      p {
+        color: #5b3026 !important;
+      }
     }
   }
 }

@@ -234,6 +234,13 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+  a.ord {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 0.1em 0.5em;
+    border-radius: 24px;
+  }
 }
 @media (max-width: 768px) and (prefers-color-scheme: dark) {
   :root {
@@ -250,7 +257,7 @@ body {
     --d-small-color: grey;
   }
   body {
-    background-color: #5B3026;
+    background-color: #5b3026;
     color: var(--d-fnt-color);
   }
   h4 {
@@ -260,12 +267,12 @@ body {
     box-shadow: var(--shadow) !important;
   }
   .card p {
-    color: #5B3026 !important;
+    color: #5b3026 !important;
   }
   .recom-container .recom {
     box-shadow: var(--shadow);
   }
   .recom-container p {
-    color: #5B3026 !important;
+    color: #5b3026 !important;
   }
 }/*# sourceMappingURL=style.css.map */
